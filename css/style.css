@@ -1,0 +1,231 @@
+:root {
+  --bg-dark: rgb(20, 20, 20);
+  --txt-color: #fff;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--txt-color);
+  font-family: "Arial", Times, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 6.8rem;
+}
+
+header .content-wrapper {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content-wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content-wrapper nav a {
+  text-decoration: none;
+  color: var(--txt-color);
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  text-transform: capitalize;
+}
+
+header .content-wrapper nav a:nth-child(n + 2) {
+  display: none;
+}
+
+header .content-wrapper nav a img:first-child {
+  height: 4.5rem;
+  margin-right: 5rem;
+}
+
+.content {
+  width: 90%;
+}
+
+main .banner-top {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/banner-top.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url("../assets/img/banner-top.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .banner-top .infos-banner-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10rem 0;
+}
+
+main .banner-top .infos-banner-top .logo-serie {
+  max-width: 70rem;
+  margin-bottom: 5rem;
+}
+
+main .banner-top .infos-banner-top p {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+main .banner-top .infos-banner-top .buttons {
+  margin-top: 3rem;
+}
+
+main .banner-top .infos-banner-top .buttons button {
+  padding: 1rem 2rem;
+  background-color: rgba(109, 109, 110, 0.7);
+  color: #fff;
+  border: 0;
+  font-size: 1.4rem;
+}
+
+main .banner-top .infos-banner-top .buttons button:first-child {
+  margin-right: 2rem;
+  background-color: #fff;
+  color: #000;
+}
+
+main .banner-top .infos-banner-top .buttons button i {
+  margin-right: 5px;
+}
+
+main .carousel-movies {
+  margin: 0 30px;
+}
+
+main .carousel-movies .category {
+  margin: 1rem 0 5rem;
+}
+
+main .carousel-movies .category .item {
+  cursor: pointer;
+}
+
+main .carousel-movies .genero {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: 3rem;
+}
+
+main .carousel-movies .genero:first-child {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    height: 6.8rem;
+  }
+  header .content-wrapper {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .content-wrapper nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .content-wrapper nav a {
+    text-decoration: none;
+    color: var(--txt-color);
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    text-transform: capitalize;
+  }
+  header .content-wrapper nav a:nth-child(n + 2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .content-wrapper nav a img:first-child {
+    height: 4.5rem;
+    margin-right: 5rem;
+  }
+  main .banner-top {
+    background-position: inherit;
+  }
+  main .banner-top .infos-banner-top p {
+    width: 50%;
+    font-size: 2.6rem;
+    line-height: 1.5;
+  }
+  main .banner-top .infos-banner-top .buttons button {
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    -webkit-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+  }
+  main .banner-top .infos-banner-top .buttons button:hover {
+    -webkit-filter: opacity(0.8);
+            filter: opacity(0.8);
+  }
+  main .carousel-movies .category {
+    margin: 1rem 0 5rem;
+  }
+  main .carousel-movies .genero {
+    font-size: 1.4vw;
+    font-weight: bold;
+    margin-left: 3rem;
+  }
+  main .carousel-movies .genero:first-child {
+    margin-top: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
